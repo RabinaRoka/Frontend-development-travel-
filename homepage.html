@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+    .btn {
+ position: relative;
+ font-size: 17px;
+ padding: 1em 2.5em;
+ display: inline-block;
+ border-radius: 6em;
+ transition: all .2s;
+ border: none;
+ font-weight: 500;
+ color: black;
+ background-color:white;
+}
+
+.btn:hover {
+ transform: translateY(-3px);
+ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+ transform: translateY(-1px);
+ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+ content: "";
+ display: inline-block;
+ height: 100%;
+ width: 100%;
+ border-radius: 100px;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: -1;
+ transition: all .4s;
+}
+
+.btn::after {
+ background-color: #fff;
+}
+
+.btn:hover::after {
+ transform: scaleX(1.4) scaleY(1.6);
+ opacity: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.imagecard {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    /* width: 95vw; */
+   
+   
+    gap: 30px;
+    overflow-x: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+.imagecard::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+}
+.card {
+    border-radius: 15px;
+
+    position: relative;
+  
+}
+
+.card>img{
+    
+    width: 500px;
+    max-width: 60vw;
+    height: 350px;
+    max-height: 50vw;
+    object-fit: cover;
+border-radius: 8px;
+}
+
+
+
+.text {
+    position: absolute;
+    bottom: 30px;
+    color: white;
+    padding-right: 10px;
+    font-size: 0.8rem;
+    margin-left: 20px;
+    /* text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); */
+    
+}
+
+.text h3, .text h2, .text .btn {
+    margin: 0;
+    font-weight: 300;
+}
+.text h2, .text .btn {
+    margin: 0;
+    font-weight: 500;
+}
+
+.text h3{
+    font-size: 0.9rem;
+}
+.text h2{
+    font-weight: bolder;
+    margin-top: 5px;
+}
+
+.text .btn {
+    margin-top: 20px;
+    padding: 7px 15px;
+    background-color: white;
+    color: black;
+    border: none;
+    
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.text .btn:hover {
+    background-color: #ddd;
+}
+
+.text .btn:active {
+    background-color: #bbb;
+}
+.about {
+        display: flex;
+        flex-wrap: wrap;
+        /* margin: auto; */
+        /* margin-left: 5vw; */
+       
+    }
+    .about > div {
+        flex: 1 1 40%; /* Adjust the width as needed */
+        margin-right: 20px;
+      margin-top: 20px;
+        padding: 30px;
+        border-radius: 10px;
+    }
+    .icon {
+        color: orangered;
+        
+    }
+
+    .icon>span{
+        font-size: 2.4rem;
+    }
+    .about h2 {
+        margin: 10px 0;
+    }
+    p {
+        margin: 5px 0 15px;
+        
+    }
+    .image-container {
+        background-image: url("https://images.unsplash.com/photo-1715553176007-31923bd14f78?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+       border-radius: 15px;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 1px solid black;
+        box-shadow: 2px solid black;
+        position: relative
+    }
+
+    .texttwo {
+       position: absolute;
+  
+     
+    }
+   
+
+</style>
+</head>
+<body>
+    <div class="main" style="margin-left: 5vw;">
+        <div>
+            <h4 style="font-weight: lighter;">Start this week</h4>
+            <h1>Check out nearest Starts </h1>
+        </div>
+        <div class="imagecard" data-aos="zoom-in-up" >
+            <div class="card" style="border-radius: 15px;">
+                <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="text">
+                    <h3>Hiking and Trekking</h3>
+                    <h2>Bergmenn icelands </h2>
+                    <button class="btn">see details</button>
+                </div>
+            </div>
+            <div class="card" style="border-radius: 15px;">
+                <img src="https://plus.unsplash.com/premium_photo-1663948060758-7d787ec4507f?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="text">
+                    <h3>Hiking and Trekking</h3>
+                    <h2>Bergmenn icelands </h2>
+                    <button class="btn">see details</button>
+                </div>
+            </div>
+            <div class="card" style="border-radius: 15px;">
+                <img src="https://images.unsplash.com/photo-1528543606781-2f6e6857f318?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="text">
+                    <h3>Hiking and Trekking</h3>
+                    <h2>Bergmenn icelands </h2>
+                    <button class="btn">see details</button>
+                </div>
+            </div>
+            <div class="card" style="border-radius: 15px;">
+                <img src="https://images.unsplash.com/photo-1527732211531-a929ba19f2b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="text">
+                    <h3>Hiking and Trekking</h3>
+                    <h2>Bergmenn icelands </h2>
+                    <button class="btn">see details</button>
+                </div>
+            </div>
+         
+        </div>
+        <br><br>
+        <div>
+            <h4 style="font-weight: lighter;">Why Us?</h4>
+            <h1>Why Travel with Real Adventures
+        </div>
+        </h1>
+        <div class="about">
+            <div style="background-color: rgb(255, 217, 146);">
+                <div class="icon" >
+                    <span class="material-symbols-outlined">shuffle</span>
+                </div>
+                <h2>Ultimate Flexibility</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, obcaecati !</p>
+            </div>
+            <div style="background-color: rgb(204, 255, 177);">
+                <div class="icon" style="color: green;">
+                    <span class="material-symbols-outlined">target</span>
+                </div>
+                <h2>Ultimate Flexibility</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, !</p>
+            </div>
+            <div style="background-color: rgb(192, 255, 244);">
+                <div class="icon" style="color: rgb(0, 111, 111);">
+                    <span class="material-symbols-outlined">shield_question</span>
+                </div>
+                <h2>Ultimate Flexibility</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, !</p>
+            </div>
+            <div style="background-color: rgb(222, 180, 255);">
+                <div class="icon" style="color: blueviolet;">
+                    <span class="material-symbols-outlined"><span class="material-symbols-outlined">
+                        flight_takeoff
+                        </span></span>
+                </div>
+                <h2>Ultimate Flexibility</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, !</p>
+            </div>
+        </div>
+        <br><br><br><br>
+        <div>
+            <h4 style="font-weight: lighter;">Featured Tips</h4>
+            <h1>Accomodations , adventure travel & vactions </h1>
+        </div>
+       
+        <div class="image-container" data-aos="zoom-in-up">
+           <div class="texttwo">
+                <h2> "Transforming your vision into reality, one click at a time"</h2>
+                <p> E V E R Y &nbsp T R A V E L &nbsp S H O U L D &nbsp BE &nbsp P E R F E C T </p>
+                <button class="btn" style="background-color: orangered;color: white;"> Book my travel now</button>
+           </div> 
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
+<!-- homepage.html
+Displaying homepage.html. -->
