@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.header h1 {
+    margin: 0;
+    color: #0073e6;
+}
+
+.header p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.rating {
+    font-size: 14px;
+    color: #28a745;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.details {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.detail-item {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.detail-item i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #0073e6;
+}
+
+.detail-item p {
+    margin: 0;
+}
+.icon{
+    color: #0073e6;
+}
+
+.pricing-booking {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+   
+}
+
+.price-table {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #ccf0fb6e;
+    border: 1px solid #ddd;
+   
+}
+
+.price-table h3 {
+    
+    color: #4083c2;
+    background-color: white;
+}
+
+.price-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.price-table table td {
+    padding: 10px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.booking {
+    width: 100%;
+    text-align: center;
+    background-color: #ddf6fe6e;
+}
+
+.booking h2 {
+    margin-top: 0;
+
+}
+
+.booking .price {
+    font-size: 24px;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+.booking input[type="date"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 70%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+.booking button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    width: 80%;
+}
+
+.booking #instant-book {
+    background-color: #0073e6;
+}
+
+.booking #check-availability {
+    background-color: #28a745;
+}
+
+@media (max-width: 768px) {
+    .details, .pricing-booking {
+        width: 100%;
+    }
+
+    .price-table, .booking {
+        width: 100%;
+    }
+
+    .pricing-booking {
+        flex-direction: column;
+    }
+}
